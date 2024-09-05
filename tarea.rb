@@ -3,8 +3,22 @@ class Contador
         @cadena = cadena
     end
     def frase
-       cadena = "EXCELENTE DIA Y EXCELENTE DIA"  
+       cadena = "gatos gatos perros tortuga tortuga "  
     end
+end
+
+def contarpr(cadena) 
+    palabras = cadena.split
+    
+    contador = Hash.new(0)
+
+    palabras.each do |palabra|
+      contador[palabra] += 1
+    end
+  
+    prepetidas = contador.select { |palabra, cuenta| cuenta > 1 }
+    
+    return prepetidas
 end
 
 class Hijo < Contador
@@ -12,14 +26,7 @@ end
 
 conteo = Contador.new("")
 
-palabras = conteo.frase.split
+cadena= conteo.frase
 
-palabrascontar = Hash.new(0)
-
-palabras.each do |palabra|
-    palabrascontar[palabra] += 1
-end
-
-palabrascontar.each do |palabra, conteo|
-    puts "#{palabra}: #{conteo}"
-end
+res = contarpr(cadena)
+puts " #{res}"
