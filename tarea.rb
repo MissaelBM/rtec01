@@ -22,11 +22,9 @@ def contarpr(cadena)
 end
 
 def modificar_variable(cadena)
-    puts "El valor actual de la variable es: #{cadena}"
-    print "Ingresa el nuevo valor para la variable: "
+    print "Nuevo valor: "
     nuevo_valor = gets.chomp  
     cadena= nuevo_valor     
-    puts "La variable ha sido actualizada a: #{cadena}"
     return cadena            
 end
 
