@@ -3,7 +3,7 @@ class Contador
         @cadena = cadena
     end
     def frase
-       cadena = "gatos gatos perros perros perros tortuga tortuga "  
+       cadena = "gatos gatos gatos perros perros perros tortuga tortuga "  
     end
 end
 
