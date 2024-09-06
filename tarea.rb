@@ -22,7 +22,7 @@ def contarpr(cadena)
 end
 
 def modificar_variable(cadena)
-    print "Nuevo valor: "
+    print "Nuevo valor : "
     nuevo_valor = gets.chomp  
     cadena= nuevo_valor     
     return cadena            
