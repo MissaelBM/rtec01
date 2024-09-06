@@ -5,6 +5,9 @@ class Contador
     def frase
        cadena = "gatos gatos gatos perros perros perros tortuga tortuga "  
     end
+    def cadobj
+        "nombreobjeto"
+    end
 end
 
 def contarpr(cadena) 
@@ -37,3 +40,6 @@ cadena= modificar_variable(cadena)
 
 res = contarpr(cadena)
 puts " #{res}"
+
+cadenastr = Contador.new("")
+puts cadenastr.cadobj.to_s
